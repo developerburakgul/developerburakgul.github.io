@@ -9,6 +9,22 @@
                     "/templateapp/favorites",
                     "/templateapp/settings"
                 ]
+            },
+            {
+                "appID": "ZBYGRL25JU.com.BurakGul.TemplateApp-Dev",
+                "paths": [
+                    "/templateapp/home",
+                    "/templateapp/favorites",
+                    "/templateapp/settings"
+                ]
+            },
+            {
+                "appID": "ZBYGRL25JU.com.BurakGul.TemplateApp-Mock",
+                "paths": [
+                    "/templateapp/home",
+                    "/templateapp/favorites",
+                    "/templateapp/settings"
+                ]
             }
         ]
     }
