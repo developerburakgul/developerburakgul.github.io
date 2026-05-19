@@ -5,7 +5,9 @@
             {
                 "appID": "ZBYGRL25JU.com.BurakGul.TemplateApp",
                 "paths": [
-                    "/templateapp/*"
+                    "/templateapp/home",
+                    "/templateapp/favorites",
+                    "/templateapp/settings"
                 ]
             }
         ]
