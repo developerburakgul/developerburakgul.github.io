@@ -108,8 +108,12 @@ Contents of each file:
 ---
 title: Feed
 app_argument: /newapp/feed
+permalink: /newapp/feed
 ---
 ```
+
+> `permalink` zorunlu — olmadan GitHub Pages `folder/index.html` yapısı nedeniyle
+> `/newapp/feed` → `/newapp/feed/` şeklinde 301 redirect döner ve sayfa 200 vermez.
 
 Push and GitHub Pages handles the rest.
 
