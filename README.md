@@ -25,6 +25,12 @@ When a user taps a link like `https://developerburakgul.github.io/templateapp/ho
 │   ├── home/index.html
 │   ├── favorites/index.html
 │   └── settings/index.html
+├── tapzero/
+│   ├── play/index.html
+│   ├── leaderboard/index.html
+│   ├── history/index.html
+│   ├── settings/index.html
+│   └── game/index.html
 ├── 404.html                         # Universal fallback for unknown paths
 ├── index.html
 └── _config.yml                      # Jekyll config: url + defaults per app namespace
@@ -39,6 +45,9 @@ When a user taps a link like `https://developerburakgul.github.io/templateapp/ho
 | TemplateApp (prod) | `com.BurakGul.TemplateApp` | `/templateapp/*` |
 | TemplateApp (dev) | `com.BurakGul.TemplateApp-Dev` | `/templateapp/*` |
 | TemplateApp (mock) | `com.BurakGul.TemplateApp-Mock` | `/templateapp/*` |
+| TapZero (prod) | `com.BurakGul.TapZero` | `/tapzero/*` |
+| TapZero (dev) | `com.BurakGul.TapZero-Dev` | `/tapzero/*` |
+| TapZero (mock) | `com.BurakGul.TapZero-Mock` | `/tapzero/*` |
 
 Team ID: `ZBYGRL25JU`
 
@@ -48,19 +57,27 @@ Team ID: `ZBYGRL25JU`
 
 ### 1. AASA — `.well-known/apple-app-site-association`
 
-Add a new `details` record with the app's bundle ID and path namespace:
+Add a new `details` record with the app's bundle IDs and path namespace:
 
 ```json
 {
-    "appID": "ZBYGRL25JU.com.BurakGul.NewApp",
-    "paths": [
-        "/newapp/feed",
-        "/newapp/profile"
+    "appIDs": [
+        "ZBYGRL25JU.com.BurakGul.NewApp",
+        "ZBYGRL25JU.com.BurakGul.NewApp-Dev",
+        "ZBYGRL25JU.com.BurakGul.NewApp-Mock"
+    ],
+    "components": [
+        {
+            "/": "/newapp/feed",
+            "comment": "Feed ekranı"
+        },
+        {
+            "/": "/newapp/profile",
+            "comment": "Profil ekranı"
+        }
     ]
 }
 ```
-
-> Dev and mock variants should also be added as separate records if needed.
 
 ### 2. Jekyll defaults — `_config.yml`
 

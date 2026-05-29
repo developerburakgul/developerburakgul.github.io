@@ -7,3 +7,8 @@ defaults:
       layout: applink
       app_id: "TEMPLATEAPP_APP_STORE_ID"
       app_name: "TemplateApp"
+  - scope: { path: "tapzero" }
+    values:
+      layout: applink
+      app_id: "6760951806"
+      app_name: "TapZero"

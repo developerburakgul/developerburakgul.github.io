@@ -3,27 +3,56 @@
         "apps": [],
         "details": [
             {
-                "appID": "ZBYGRL25JU.com.BurakGul.TemplateApp",
-                "paths": [
-                    "/templateapp/home",
-                    "/templateapp/favorites",
-                    "/templateapp/settings"
+                "appIDs": [
+                    "ZBYGRL25JU.com.BurakGul.TemplateApp",
+                    "ZBYGRL25JU.com.BurakGul.TemplateApp-Dev",
+                    "ZBYGRL25JU.com.BurakGul.TemplateApp-Mock"
+                ],
+                "components": [
+                    {
+                        "/": "/templateapp/home",
+                        "comment": "Ana ekran"
+                    },
+                    {
+                        "/": "/templateapp/favorites",
+                        "comment": "Favoriler ekranı"
+                    },
+                    {
+                        "/": "/templateapp/settings",
+                        "comment": "Ayarlar ekranı"
+                    }
                 ]
             },
             {
-                "appID": "ZBYGRL25JU.com.BurakGul.TemplateApp-Dev",
-                "paths": [
-                    "/templateapp/home",
-                    "/templateapp/favorites",
-                    "/templateapp/settings"
-                ]
-            },
-            {
-                "appID": "ZBYGRL25JU.com.BurakGul.TemplateApp-Mock",
-                "paths": [
-                    "/templateapp/home",
-                    "/templateapp/favorites",
-                    "/templateapp/settings"
+                "appIDs": [
+                    "ZBYGRL25JU.com.BurakGul.TapZero",
+                    "ZBYGRL25JU.com.BurakGul.TapZero-Dev",
+                    "ZBYGRL25JU.com.BurakGul.TapZero-Mock"
+                ],
+                "components": [
+                    {
+                        "/": "/tapzero/play",
+                        "comment": "Ana oyun başlatma ekranı"
+                    },
+                    {
+                        "/": "/tapzero/leaderboard",
+                        "comment": "Skor tablosu ekranı"
+                    },
+                    {
+                        "/": "/tapzero/history",
+                        "comment": "Geçmiş oyunlar ekranı"
+                    },
+                    {
+                        "/": "/tapzero/settings",
+                        "comment": "Ayarlar ekranı"
+                    },
+                    {
+                        "/": "/tapzero/game",
+                        "?": {
+                            "time": "?*"
+                        },
+                        "comment": "Aktif oyun — time parametresi zorunlu (örn. /tapzero/game?time=60)"
+                    }
                 ]
             }
         ]
