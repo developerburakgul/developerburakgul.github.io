@@ -1,1 +1,9 @@
+url: "https://developerburakgul.github.io"
 include: [".well-known"]
+
+defaults:
+  - scope: { path: "templateapp" }
+    values:
+      layout: applink
+      app_id: "TEMPLATEAPP_APP_STORE_ID"
+      app_name: "TemplateApp"
